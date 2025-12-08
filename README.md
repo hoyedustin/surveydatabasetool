@@ -8,6 +8,25 @@ The way I see it, there are three parts to this
 3. Back End Database
 
 
+As always, let's make sure we have python setup and configured before we do anthing else: 
+
+# set up environment
+
+## you will need python 3.10 - use pyenv perhaps to be able to install various pythons
+
+## virtual environment
+```
+$ python3 --version
+$ python3.10 -m venv .venv-3.10
+$ source .venv-3.10/bin/activate
+(venv) $
+```
+
+## install requirements
+`pip install -r requirements.txt`
+
+
+
 
 # Middle API Connection #
 
