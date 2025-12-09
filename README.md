@@ -63,5 +63,10 @@ To access my local mysql setup, I run the following command in my local terminal
 /usr/local/mysql/bin/mysql -u dustinh -p
 ```
 
+From here, I am able to run standard SQL commands such as 
+```
+create database survey_database;
+```
+
 For now, in my local setup, I created a database called survey_database. I don't think I need to create a table for now because sqlalchemy will do that for me.
 
