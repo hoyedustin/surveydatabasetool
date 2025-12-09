@@ -70,3 +70,10 @@ create database survey_database;
 
 For now, in my local setup, I created a database called survey_database. I don't think I need to create a table for now because sqlalchemy will do that for me.
 
+# PY File #
+
+Now it's time to create our first .py file. 
+
+[data pull](scripts/datapull.py)
+
+
