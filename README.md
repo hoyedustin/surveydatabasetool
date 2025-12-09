@@ -94,7 +94,13 @@ INFO:     Application startup complete.
 INFO:     127.0.0.1:53976 - "GET /docs HTTP/1.1" 200 OK
 INFO:     127.0.0.1:53976 - "GET /openapi.json HTTP/1.1" 200 OK
 ```
+# UI #
 
-After this, you can go to http://127.0.0.1:8000/docs#/ you your local machine to see your created API. Pretty cool!
+After running the code succesfully above, FASTAPI creates a local UI for you. You can go to http://127.0.0.1:8000/docs#/ you your local machine to see your created API. Pretty cool!
+
+Now we have a completed local tool. Now we want both the data base and the UI to become cloud based.
+
+
+# Cloud Based Database #
 
 
