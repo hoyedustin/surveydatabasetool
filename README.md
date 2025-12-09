@@ -74,6 +74,6 @@ For now, in my local setup, I created a database called survey_database. I don't
 
 Now it's time to create our first .py file. 
 
-[data pull](scripts/datapull.py)
+[main script](main.py)
 
 
