@@ -7,7 +7,7 @@ def create_survey_response(db: Session, survey: SurveyResponseCreate):
     db_survey = SurveyResponse(
         name=survey.name,
         email=survey.email,
-        response=survey.response
+        feedback=survey.feedback  # <-- fixed field name
     )
     db.add(db_survey)
     db.commit()
