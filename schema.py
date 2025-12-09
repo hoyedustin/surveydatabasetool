@@ -9,10 +9,9 @@ class SurveyResponseCreate(BaseModel):
 
 # Schema for outgoing survey responses (GET)
 class SurveyResponseRead(BaseModel):
-    id: int
     name: str
     email: str
-    feedback: str
+    response: str
 
     class Config:
         orm_mode = True
