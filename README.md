@@ -115,11 +115,18 @@ We will need to make a new file for our clouddatabase, you can find that here: [
 
 NOTE: I made a .env file and .gitignore to hide my GCP credentials.
 
-In the GCP API, you go to Cloud SQL API and click "Enable".
+1. In the GCP API, you go to Cloud SQL API and click "Enable".
 
-Once that is done, then you go to "Cloud SQL", and create an instance. NOTE: You will have to set up a billing acount first.
+2. Once that is done, then you go to "Cloud SQL", and create an instance. NOTE: You will have to set up a billing acount first.
 
-Enable the API, and choose your SQL version 
+3. Enable the API, and choose your SQL version. Then create your instance.
+
+4. Next, you have to create a database. I called mine "cloud_survey_database"
+
+5. Next, you create the user 
+
+
+
 
 
 
