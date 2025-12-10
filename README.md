@@ -125,6 +125,12 @@ NOTE: I made a .env file and .gitignore to hide my GCP credentials.
 
 5. Next, you create the user. Add the UN and PW to the .env file.
 
+6. We have have to make the connetion. Go to your Cloud SQL instance → Connections
+
+Under Public IP, add your current IP to the allowed networks list
+
+You can find your IP by searching “what is my IP” in Google
+
 
 
 
