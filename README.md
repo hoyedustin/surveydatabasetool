@@ -117,7 +117,11 @@ NOTE: I made a .env file and .gitignore to hide my GCP credentials.
 
 In the GCP API, you go to Cloud SQL API and click "Enable".
 
-Once that is done, then you go to 
+Once that is done, then you go to "Cloud SQL", and create an instance. NOTE: You will have to set up a billing acount first.
+
+Enable the API, and choose your SQL version 
+
+
 
 
 
