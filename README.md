@@ -114,6 +114,6 @@ We will also need to the the following packages: google-cloud-sqlconnector and c
 We will need to make a new file for our clouddatabase, you can find that here: [cloud database](clouddatabase.py).
 
 
-test
+NOTE: I made a .env file and .gitignore to hide my GCP credentials.
 
-test12
+
