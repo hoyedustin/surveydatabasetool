@@ -148,7 +148,11 @@ and the same payload should appear in the cloud database now!
 
 Now that we have figured out how to push our data into a Google Cloud SQL database, it is time to take the next step and host the server in the cloud as well. Wanting to use the same tech stack, I am going to attempt this using a Google Cloud Run job. It should be essentially a script that is stored in GCP and schedueld when I would like as well.
 
-1. In order to do this, we are going to need to create a docker file. A dockerfile is a mini enviornment that basically tells GCP the specific packages and requirnments that are required to perform the task we are doing. 
+1. In order to do this, we are going to need to create a docker file. A dockerfile is a mini enviornment that basically tells GCP the specific packages and requirnments that are required to perform the task we are doing. If you look at our Dockerfile, it you will that it tells GCP what version of python to use, which dependancies to use, what working directory to use etc.
+
+NOTE: The "D" in Dockerfile must be capitalized. I learned that one the hard way.
+
+You can find the file here: [Dockerfile](Dockerfile).
 
 
 
