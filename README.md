@@ -195,5 +195,18 @@ Once it is configred you should be good to go!
 After hitting send, my data is in the database!
 
 
+# Web Survey #
+
+
+Time for the final part of this. Let's take it out of Postman and into a cool UI.
+
+I am not going to overthinkg this. I'm just gonna use ChatGPT for this and have it spit up some .html design. I don't care about learning html.
+
+Here is the file if you want to see it, but it doesn't matter [index.html](index.html).
+
+Cool thing I learned, Github hosts webpages for you in pages.
+
+1. Scroll left sidebar and Pages, Deploy from a branch, Branch: Select main, Folder: Select / (root), Click Save.
+
 
 
