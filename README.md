@@ -173,7 +173,7 @@ Once that runs sucessfully, you will be able to see your docker image in the GCP
 
 Now let's deploy the job!
 
-# Deploying the Job #'
+# Deploying the Job #
 
 1. Go to "Cloud Run" in the GCP console and enable it.
 
