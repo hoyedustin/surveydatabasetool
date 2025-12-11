@@ -181,7 +181,18 @@ Now let's deploy the job!
  
 3. Choose Deploy one revision from an existing container image.
 
-Now let's enter our image URL:
+Once it is configred you should be good to go!
+
+4. To test, I went to Postman from a different machine, and sent the following POST request to this address https://survey-service-71962433246.us-central1.run.app/survey
+```
+{
+  "name": "Postman User",
+  "email": "postman@example.com",
+  "feedback": "Testing from Postman!"
+}
+```
+
+After hitting send, my data is in the database!
 
 
 
