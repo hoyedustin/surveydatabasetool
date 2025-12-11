@@ -6,8 +6,21 @@ from databasecloud import SessionLocal, engine, Base
 from crud import create_survey_response, get_all_responses
 from schemas import SurveyResponseCreate, SurveyResponseRead
 from typing import List
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="Survey API")
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://hoyedustin.github.io",
+        "https://hoyedustin.github.io/surveydatabasetool"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def root():
