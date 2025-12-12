@@ -229,5 +229,9 @@ app.add_middleware(
 }
 ```
 
+And that's all folks! 
+
+The final part of this saga is that I got charged $100.00 from GCP. This was shocking. Fortunatly, I said that the charge wasn't mine.
+
 
 
