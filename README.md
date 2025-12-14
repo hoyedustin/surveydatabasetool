@@ -108,7 +108,7 @@ Now we can use this email to create a free GCP account.
 
 We will also need to the the following packages: google-cloud-sqlconnector and cryptography. I will add them to requirnments.txt
 
-We will need to make a new file for our clouddatabase, you can find that here: [cloud database](clouddatabase.py).
+We will need to make a new file for our clouddatabase, you can find that here: [cloud database](databasecloud.py).
 
 NOTE: I made a .env file and .gitignore to hide my GCP credentials.
 
