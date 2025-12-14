@@ -203,7 +203,7 @@ Here is the html file: [index.html](index.html).
 
 In the interest of wanting to use new technology, I am going to use Github pages; a Github services that actually hosts webpages.
 
-1. Scroll left sidebar and Pages, Deploy from a branch, Branch: Select main, Folder: Select / (root), Click Save.
+Scroll left sidebar and Pages, Deploy from a branch, Branch: Select main, Folder: Select / (root), Click Save.
 
 NOTE: 
 
