@@ -27,14 +27,13 @@ $ source .venv-3.10/bin/activate
 
 
 
-
 # Middle API Connection #
 
 I am going to start with the middle part of this for now as it is the most familiar to me. Hopefully getting some traction going will motivate me to to push through and finish this project.
 
 We are going to have to build an API from the ground up here. There are, fortunately, existing python packages that allow for this.
 
-1. Chatgpt says that the best framework to use is fastapi.
+1. We are going to use FastAPI for this.
 
 0.124.0 is the newest version so I will put that into the requirements.txt file.
 
@@ -51,10 +50,8 @@ PYPL says that 2.0.44 is the newest version so we are throwing that in requireme
 PYPL says that 5.3.0 is the newest version so into requirements.txt we go.
 
 
-# Backend SQL Database #
+# Backend SQL Database - Local #
 
-
-# 12/8/2025: # 
 Since I am using MacOS, there is no local SQL application. I downloaded my sql and am just running it via terminal commands for now. I am going to updated this. I tried using MySQLWorkbench as UI option but it keeps crashing hence terminal commands. I am 100% switching to a cloud option once I get this more flushed out.
 
 To access my local mysql setup, I run the following command in my local terminal:
@@ -72,7 +69,7 @@ For now, in my local setup, I created a database called survey_database. I don't
 
 # PY Files #
 
-Now it's time to create our first .py file. 
+Now it's time to create our .py files. 
 
 [database file](database.py): this file is a function that will connect to our database.
 [models file](models.py): this file defines the table structure that we are are going to be using.
@@ -150,7 +147,7 @@ Now that we have figured out how to push our data into a Google Cloud SQL databa
 
 1. In order to do this, we are going to need to create a docker file. A dockerfile is a mini enviornment that basically tells GCP the specific packages and requirnments that are required to perform the task we are doing. If you look at our Dockerfile, it you will that it tells GCP what version of python to use, which dependancies to use, what working directory to use etc.
 
-NOTE: The "D" in Dockerfile must be capitalized. I learned that one the hard way.
+NOTE: The "D" in Dockerfile must be capitalized. This is a unique property that I learned the hard way a couple years ago.
 
 You can find the file here: [Dockerfile](Dockerfile).
 
@@ -200,17 +197,17 @@ After hitting send, my data is in the database!
 
 Time for the final part of this. Let's take it out of Postman and into a cool UI.
 
-I am not going to overthinkg this. I'm just gonna use ChatGPT for this and have it spit up some .html design. I don't care about learning html.
+I am not going to overthink this. I'm going to use a basic html format for this. The point of this project is not to build out a fancy UI (not yet at least).
 
-Here is the file if you want to see it, but it doesn't matter [index.html](index.html).
+Here is the html file: [index.html](index.html).
 
-Cool thing I learned, Github hosts webpages for you in pages.
+In the interest of wanting to use new technology, I am going to use Github pages; a Github services that actually hosts webpages.
 
 1. Scroll left sidebar and Pages, Deploy from a branch, Branch: Select main, Folder: Select / (root), Click Save.
 
 NOTE: 
 
-I had to add the following code into my main.py file to allow the Cross-Origin Resource Sharing or CORS. Basically this allows specific websites to submit to my database. Without adding this part below, it just flags an error and doesn't submit. 
+I had to add the following code into my main.py file to allow the Cross-Origin Resource Sharing or CORS. This allows specific websites to submit to my database. Without adding this part below, it flags an error and doesn't submit. 
 
 ```
 {
@@ -229,9 +226,9 @@ app.add_middleware(
 }
 ```
 
-And that's all folks! 
+And that's all folks!
 
-The final part of this saga is that I got charged $100.00 from GCP. This was shocking. Fortunatly, I said that the charge wasn't mine.
+The submitted data from the online survey page is now stored in my GCP Cloud SQL Database.
 
 
 
